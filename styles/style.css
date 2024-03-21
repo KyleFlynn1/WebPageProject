@@ -379,20 +379,24 @@ nav ul li a:hover::after {
 
 .moreHouseListings {
     float: right;
-    max-width: 25%;
+    width: 15%;
+    max-width: 15%;
     max-height: 500px;
     padding: 20px;
     margin-top: 20px;
-    margin-right: 10px;
+    margin-right: 150px;
     background-color: #F0EFF4;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     border: #1B2D2A 4px solid;
 }
 
+/*More house listings aside of listing page */
+
 .moreHouseListings img{
     border-radius: 10px;
-    max-width: 85%;
+    width: 285px;
+    height: 350px;
 }
 
 .moreHouseListings a{
