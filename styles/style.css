@@ -115,7 +115,7 @@ nav ul li a:hover::after {
     position: absolute;
     border: 4px solid #F0EFF4;
     padding: 4px;
-    top: 53%; 
+    top: 56%; 
     left: 50%;
     transform: translateX(-50%);
     font-size: 2.8em;
@@ -124,7 +124,7 @@ nav ul li a:hover::after {
 #homeTop p:hover{
     transition: all ease-in-out 0.15s;
     padding: 8px;
-    top: 52%;
+    top: 55%;
     background-color: #BB9457;
     border: 5px solid #F0EFF4;
 }
@@ -144,7 +144,7 @@ nav ul li a:hover::after {
     text-align: center;
     color: #F0EFF4;
     position: absolute;
-    top: 49%; 
+    top: 51%; 
     left: 50%;
     transform: translateX(-50%);
     font-size: 1.8em; 
@@ -154,7 +154,7 @@ nav ul li a:hover::after {
     text-align: center;
     color: #fd0808;
     position: absolute;
-    top: 48%; 
+    top: 50%; 
     left: 50%;
     width: 600px;
     transform: translateX(-50%);
@@ -237,11 +237,14 @@ nav ul li a:hover::after {
     width: 32%; 
     height: 800px;
     margin-bottom: 20px; 
+    margin-top: 20px;
     box-sizing: border-box; 
     border: 1px solid #F0EFF4;
     overflow: hidden; 
     position: relative; 
     transition: transform 0.3s ease; 
+    border-radius: 10px;
+    border: #1B2D2A 5px solid;
 }
 
 .listing:hover {
@@ -254,7 +257,15 @@ nav ul li a:hover::after {
     height: 600px; 
 }
 
-.listing h3, .listing h4, .listing p {
+.listing h3{
+    margin: 5px 0; 
+    text-align: center; 
+}
+.listing h4{
+    margin: 5px 0; 
+    text-align: center; 
+}
+.listing p {
     margin: 5px 0; 
     text-align: center; 
 }
@@ -272,7 +283,7 @@ nav ul li a:hover::after {
 .backButtonStyle {
     display: inline-block;
     margin-top: 10px;
-    margin-left: 130px;
+    margin-left: 10px;
     padding: 10px 20px;
     background-color: #1B2D2A;
     color: #F0EFF4;
@@ -286,26 +297,18 @@ nav ul li a:hover::after {
 }
 
 .houseListingBlock {
+    float: left;
     position: relative;
-    max-width: 1200px;
+    max-width: 65%;
     margin: 20px auto;
+    margin-left: 10px;
     padding: 20px;
     background-color: #F0EFF4;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-left: #1B2D2A 12px solid;
 }
 
-.houseListingBlock::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: -10px;
-    width: 10px;
-    background-color: #1B2D2A;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-}
 
 .listingImages {
     position: relative;
@@ -372,4 +375,31 @@ nav ul li a:hover::after {
     right: 20px;
     border: 1px solid #F0EFF4;
     border-radius: 10px;
+}
+
+.moreHouseListings {
+    float: right;
+    max-width: 25%;
+    max-height: 500px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-right: 10px;
+    background-color: #F0EFF4;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border: #1B2D2A 4px solid;
+}
+
+.moreHouseListings img{
+    border-radius: 10px;
+    max-width: 85%;
+}
+
+.moreHouseListings a{
+    color: #BB9457;
+    text-decoration: none;
+}
+
+.moreHouseListings:hover {
+    transform: scale(1.02);
 }
