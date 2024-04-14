@@ -115,7 +115,6 @@ nav ul li a:hover::after {
 .navActive {
     text-decoration: none;
     color: #BB9457; 
-    position: relative; 
 }
 
 /*TopHome ID Image Style*/
