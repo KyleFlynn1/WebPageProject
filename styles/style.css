@@ -112,7 +112,7 @@ nav ul li a:hover::after {
     border-bottom: 0.2em solid #BB9457; 
 }
 
-#navActive {
+.navActive {
     text-decoration: none;
     color: #BB9457; 
     position: relative; 
